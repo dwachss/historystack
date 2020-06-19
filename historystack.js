@@ -16,13 +16,13 @@ HistoryStack.prototype = {
 		if (this._index > this._length ) this._index = this._length;
 		return this.state;
 	},
-	pushState(state){
+	pushState(state) {
 		this._length = ++this._index;
-		this.replaceState(state);
+		return this.replaceState(state);
 	},
-	replaceState (state) { this._states[this._index] = state },
-	get length() {return this._length },
-	get state() {return this._states[this._index]},
+	replaceState (state) { return this._states[this._index] = state },
+	get length() { return this._length },
+	get state() { return this._states[this._index] },
 	// not part of the interface but useful nonetheless
 	get atStart() { return this._index == 1 },
 	get atEnd() { return this._index == this._length }
