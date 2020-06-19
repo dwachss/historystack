@@ -1,10 +1,9 @@
 // Implements the History interface for use with things other than browser history. I don't know why they won't let us use 
-// let h = new History()
 
 function HistoryStack (inititalstate){
 	this._length = 1;
 	this._index = 1;
-	this._states = [inititalstate];
+	this._states = [undefined, inititalstate]; // easiest on the math to use 1-index array
 }
 
 HistoryStack.prototype = {
