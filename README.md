@@ -4,9 +4,9 @@ Implement the javascript History interface for things other than browser history
 For a command line interface (with up and down arrows for repeating commands) or an undo list, I want something that generalizes a stack, that works just like the javascript [History](https://developer.mozilla.org/en-US/docs/Web/API/History). Unfortunately, `let h = new History()` is illegal. So I made my own. Same interface; push and restore anything that represents your state. The `scrollRestoration` property is undefined, since that's only relevant for browser history.
 
 ## Files
-[history.js](https://github.com/dwachss/historystack/blob/master/historystack.js): the code.
+[history.js](https://github.com/dwachss/historystack/blob/master/history.js): the code.
 
-[history.test.hmtl](http://github.bililite.com/historystack/historystack.test.html): simple test suite.
+[history.test.hmtl](http://github.bililite.com/historystack/history.test.html): simple test suite.
 
 ## Usage
 See the actual [History](https://developer.mozilla.org/en-US/docs/Web/API/History) documentation for the methods and properties.
