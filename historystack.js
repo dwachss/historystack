@@ -1,12 +1,12 @@
 // Implements the History interface for use with things other than browser history. I don't know why they won't let us use 
 
-function HistoryStack (inititalstate){
+function History (inititalstate){
 	this._length = 1;
 	this._index = 1;
 	this._states = [undefined, inititalstate]; // easiest on the math to use 1-index array
 }
 
-HistoryStack.prototype = {
+History.prototype = {
 	back() { return this.go(-1) },
 	forward() {return this.go(1) },
 	go(n) {

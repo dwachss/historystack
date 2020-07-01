@@ -21,3 +21,8 @@ There are two read-only Boolean properties that are useful and I don't know why 
 h.atStart === true // when at the beginning of the history list, when h.back() leaves the state unchanged
 h.atEnd === true // when at the end of the history list, when h.forward() leaves the state unchanged
 ```
+
+## Note
+
+This redefines `History` but that should never be a problem, since it is impossible to instantiate the original
+`History`; `let h = new History()` throws an Illegal Constructor error. The original `window.history` is unchanged.

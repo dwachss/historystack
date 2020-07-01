@@ -1,5 +1,5 @@
 QUnit.test( "initial state undefined", function( assert ) {
-	let h = new HistoryStack();
+	let h = new History();
   assert.ok( h.state === undefined, "state is undefined" );
   assert.ok( h.length === 1, "length is 1" );
   assert.ok( h.atStart === true, "at start" );
@@ -30,7 +30,7 @@ QUnit.test( "initial state undefined", function( assert ) {
   assert.ok( h.atEnd === true, "at end" );
 });
 QUnit.test( "initial state foo", function( assert ) {
-	let h = new HistoryStack('foo');
+	let h = new History('foo');
   assert.ok( h.state === 'foo', "state is 'foo'" );
   assert.ok( h.length === 1, "length is 1" );
   assert.ok( h.atStart === true, "at start" );
