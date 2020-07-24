@@ -6,7 +6,7 @@ For a command line interface (with up and down arrows for repeating commands) or
 ## Files
 [history.js](https://github.com/dwachss/historystack/blob/master/history.js): the code.
 
-[history.test.hmtl](http://github.bililite.com/historystack/history.test.html): simple test suite.
+[history.test.html](http://github.bililite.com/historystack/history.test.html): simple test suite.
 
 ## Usage
 See the actual [History](https://developer.mozilla.org/en-US/docs/Web/API/History) documentation for the methods and properties.
