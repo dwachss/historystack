@@ -1,4 +1,5 @@
 // Implements the History interface for use with things other than browser history. I don't know why they won't let us use 
+'use strict';
 
 function History (inititalstate){
 	this._length = 1;
